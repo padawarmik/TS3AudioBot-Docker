@@ -8,7 +8,7 @@ LABEL arch="x64"
 
 #Installation Packages
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg curl openssl unzip libopus-dev && \
+    apt-get install -y --no-install-recommends ffmpeg curl openssl unzip libopus-dev python3 && \
     rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
 
 #Set Environments (https://github.com/Splamy/TS3AudioBot/releases/) we will use "master" image for now
