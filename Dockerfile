@@ -12,7 +12,7 @@ RUN apt-get update && \
     rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
 
 #Set Environments (https://github.com/Splamy/TS3AudioBot/releases/) we will use "master" image for now
-ARG TS3_AUDIOBOT_RELEASE="master"
+ARG TS3_AUDIOBOT_RELEASE="develop_linux_x64"
 
 #YT-DLP
 RUN curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/youtube-dl \
